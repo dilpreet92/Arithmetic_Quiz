@@ -21,6 +21,7 @@ CreateQuiz.prototype.createRandomNumber = function(value) {
 CreateQuiz.prototype.createAssignment = function() {
   this.count++;
   $("h2").text("Question No  : " + this.count);
+  this.answerTextElement.val("");
   this.number1Element.text(this.createRandomNumber(20));
   this.number2Element.text(this.createRandomNumber(20));
   var operator = this.createRandomNumber(4);
